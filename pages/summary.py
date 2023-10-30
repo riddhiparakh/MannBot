@@ -4,7 +4,7 @@ import pandas as pd
 from datetime import datetime
 
 def main():
-    df = pd.read_csv('', sep=',', encoding='latin-1')#add path to summary which is in summary_data
+    df = pd.read_csv('/Users/riddhiparakh/Desktop/maanBot/data/fine_tuned_summaries.csv', sep=',', encoding='latin-1')#add path to summary which is in summary_data
     print(df.head(1))
     st.title("Text Summary")
     st.text("Add a text file to generate a summary:")

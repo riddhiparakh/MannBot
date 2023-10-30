@@ -6,7 +6,7 @@ from firebase_admin import credentials
 from firebase_admin import auth
 from streamlit_chat import message
 if not firebase_admin._apps:
-    cred = credentials.Certificate()  #add cred for firebase
+    cred = credentials.Certificate('/Users/riddhiparakh/Desktop/maanBot/deployed/MannBot_Chatbot/mannbot-53485-02e4fda4468e.json')  #add cred for firebase
     firebase_admin.initialize_app(cred)
 
 def main():

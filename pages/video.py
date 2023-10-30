@@ -56,11 +56,11 @@ def get_youtube_comments(path, max_results=500):
         page_token = response.get('nextPageToken')
 
     df = pd.DataFrame(comments, columns=['author', 'like_count', 'comment'])
-    df.to_csv('',index=False) #add path for comments.csv
+    df.to_csv('/Users/riddhiparakh/Desktop/maanBot/deployed/MannBot_Chatbot/sentiment/comments.csv',index=False) #add path for comments.csv
     return df
 
 def sentiment(df):
-  df = pd.read_csv('') #add path for comments.csv
+  df = pd.read_csv('/Users/riddhiparakh/Desktop/maanBot/deployed/MannBot_Chatbot/sentiment/comments.csv') #add path for comments.csv
 
   def preprocess_text(text):
       print("in preprocessing")
