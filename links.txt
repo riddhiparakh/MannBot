@@ -1,0 +1,17 @@
+HuggingFace API
+
+https://huggingface.co/docs/hub/security-tokens
+
+
+FireBase 
+
+https://firebase.google.com/
+
+
+google-developer
+
+https://console.cloud.google.com/
+
+Fine Tuned Model for Summarization
+ 
+https://huggingface.co/riddhiparakh/mannbot
