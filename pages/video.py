@@ -123,16 +123,18 @@ def main():
   if col1.button("Play"):
       st.video(path)
 
-  # Button for displaying comments
-  if col2.button("Comments"):
-      comments = get_youtube_comments(path)
-      st.write(comments)
+  # Button for displaying comments:
+  with st.spinner('Processing...'):
+    if col2.button("Comments"):
+        comments = get_youtube_comments(path)
+        st.write(comments)
 
   # Button for sentiment analysis
-  if col3.button("Sentiment"):
-      comment = get_youtube_comments(path)
-      comments = sentiment(comment)
-      st.write(comments)
+  with st.spinner('Processing...'):
+    if col3.button("Sentiment"):
+        comment = get_youtube_comments(path)
+        comments = sentiment(comment)
+        st.write(comments)
 		
 if __name__ == '__main__':
 	main()
