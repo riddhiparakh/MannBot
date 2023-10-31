@@ -33,3 +33,25 @@ Usage
 To run the MannBot app:
 
 streamlit run home.py
+
+
+
+In the chat.py, you can use the following prompt  or any other prompt based on Mann ki Baat. Make sure the prompt is detailed.
+
+Questions:
+What is the significance of observing 2 minutes of silence at 11 A.M. on January 30?
+
+How did Sardar Patel describe the importance of khadi to India?
+
+What is Modi talking about cleanliness?
+
+What is Modi talking about the Vijay Vijay Dashami?
+
+What is Modi's take on drugs?
+
+What is Modi's take on drugs? What is his plan to reduce them? Does he think youth should do drugs?
+
+
+
+
+
