@@ -49,7 +49,6 @@ entrypoints==0.4
 Events==0.5
 exceptiongroup==1.1.3
 faiss-cpu==1.7.4
-farm-haystack==1.21.2
 fastapi==0.100.1
 fastapi-socketio==0.0.10
 filelock==3.12.4
