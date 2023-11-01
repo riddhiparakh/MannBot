@@ -60,7 +60,7 @@ def get_youtube_comments(path, max_results=500):
     return df
 
 def sentiment(df):
-  df = pd.read_csv('/sentiment/comments.csv') #add path for comments.csv
+  df = pd.read_csv('sentiment/comments.csv') #add path for comments.csv
 
   def preprocess_text(text):
       print("in preprocessing")
