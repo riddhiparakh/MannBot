@@ -17,7 +17,7 @@ import firebase_admin
 from firebase_admin import credentials, firestore
  
 api_key = os.getenv("HUGGING_FACE_API_KEY")
-db_path='/vectorstore/db_faiss' # add the path to db_faiss
+db_path='vectorstore/db_faiss/' # add the path to db_faiss
 messages= []
 if "conversation" not in st.session_state:
     st.session_state.conversation = []
