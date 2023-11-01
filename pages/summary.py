@@ -7,7 +7,7 @@ def main():
     df = pd.read_csv('/Users/riddhiparakh/Desktop/maanBot/data/fine_tuned_summaries.csv', sep=',', encoding='latin-1')#add path to summary which is in summary_data
     print(df.head(1))
     st.title("Text Summary")
-    st.text("Add a text file to generate a summary:")
+    st.text("Add a text file to generate a summary, the text file should be in dd_mon_yyyy.txt:")
     uploaded_files = st.file_uploader("Choose a text file", accept_multiple_files=True)
     summaries = []
 
@@ -26,7 +26,9 @@ def main():
         if matching_summary:
             summaries.append(matching_summary[0])
         else:
-            summaries.append("No matching summary found")
+            summarizer = pipeline("summarization", model="riddhiparakh/mannbot", device=0)
+            result = summarizer(uploaded_file )
+            st.write(result[0]['summary_text'])
 
     if st.button("Process"):
         with st.spinner("Processing"):

@@ -49,6 +49,7 @@ entrypoints==0.4
 Events==0.5
 exceptiongroup==1.1.3
 faiss-cpu==1.7.4
+farm-haystack==1.21.2
 fastapi==0.100.1
 fastapi-socketio==0.0.10
 filelock==3.12.4
@@ -196,7 +197,7 @@ scikit-learn==1.3.1
 scipy==1.10.1
 seaborn==0.13.0
 semver==3.0.1
-sentence-transformers==2.2.2
+sentence-transformers
 sentencepiece==0.1.99
 simple-websocket==0.10.1
 six==1.16.0
@@ -205,7 +206,7 @@ smmap==5.0.1
 sniffio==1.3.0
 soupsieve==2.5
 spacy==2.2.4
-spacy-transformers==0.6.0
+spacy-transformers
 SQLAlchemy==2.0.21
 srsly==1.0.7
 sseclient-py==1.8.0
@@ -233,7 +234,7 @@ torchcontrib==0.0.2
 torchvision==0.15.2
 tornado==6.3.3
 tqdm==4.66.1
-transformers==4.34.0
+transformers>=4.34.0
 typer==0.9.0
 typing-inspect==0.9.0
 typing_extensions==4.8.0
