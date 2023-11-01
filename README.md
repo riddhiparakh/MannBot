@@ -34,7 +34,8 @@ To run the MannBot app:
 
 streamlit run home.py
 
-
+This is the deployed app
+https://mannbot.streamlit.app/login
 
 In the chat.py, you can use the following prompt  or any other prompt based on Mann ki Baat. Make sure the prompt is detailed.
 
