@@ -1,0 +1,27 @@
+name: My GitHub Actions Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  my_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Use Hugging Face Hub API Token
+        env:
+          HUGGINGFACEHUB_API_TOKEN: ${{ secrets.HUGGINGFACEHUB_API_TOKEN }}
+          DEVELOPER_KEY: ${{ secrets.DEVELOPER_KEY }}
+          FIREBASE: ${{ secrets.FIREBASE}}
+        run: |
+          # Here you can use both secrets, and they will not expose the actual values
+          echo "Using the API token: $HUGGINGFACEHUB_API_TOKEN"
+          echo "Using the DEVELOPER_KEY: $DEVELOPER_KEY"
+
+      # Add more steps and configurations as needed
+
