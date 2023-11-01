@@ -56,7 +56,7 @@ def get_youtube_comments(path, max_results=500):
         page_token = response.get('nextPageToken')
 
     df = pd.DataFrame(comments, columns=['author', 'like_count', 'comment'])
-    df.to_csv('/sentiment/comments.csv',index=False) #add path for comments.csv
+    df.to_csv('sentiment/comments.csv',index=False) #add path for comments.csv
     return df
 
 def sentiment(df):
