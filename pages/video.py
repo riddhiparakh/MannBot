@@ -16,7 +16,7 @@ def get_path(path):
   return path
 
 
-api_key = os.getenv("DEVELOPER_KEY") # get google developer key for translating sentences 
+api_key = os.getenv(DEVELOPER_KEY) # get google developer key for translating sentences 
 def get_youtube_comments(path, max_results=500):
     load_dotenv()
     api_service_name = "youtube"
