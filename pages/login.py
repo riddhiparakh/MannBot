@@ -5,7 +5,7 @@ from firebase_admin import credentials
 from firebase_admin import auth
 
 if not firebase_admin._apps:
-    cred = credentials.Certificate(FIREBASE) #add cred for firebase
+    cred = credentials.Certificate('mannbot-53485-02e4fda4468e.json') #add cred for firebase
     firebase_admin.initialize_app(cred)
 
 def main():
